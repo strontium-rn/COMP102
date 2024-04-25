@@ -10,10 +10,10 @@ struct student{
 };
 
 void displayStudents(struct student *s){
-    printf("Name:%s", s->name);
-    printf("Roll No:%d", s->roll_no);
-    printf("Email:%d", s->email);
-    printf("Enrolled Year:%d", s->enrolled_year);
+    printf("Name:%s\n", s->name);
+    printf("Roll No:%d\n", s->roll_no);
+    printf("Email:%s\n", s->email);
+    printf("Enrolled Year:%d\n", s->enrolled_year);
 }
 
 int main(){
@@ -34,7 +34,7 @@ int main(){
     //sorting by the enrolled year
     for (int i = 0; i < 5; i++)
     {
-        for (int j = i+1; j < 5; i++)
+        for (int j = i+1; j < 5; j++)
         {
             if (std[i].enrolled_year > std[j].enrolled_year)
             {
